@@ -1,0 +1,17 @@
+Small Business
+StreetFighter *
+Hot or Cold *
+Shopping List *
+Quiz App *
+API Hack *
+Portfolio
+
+
+
+
+The format=json in your query string should probably be format=jsonp. The server is replying with JSON, but you're expecting a JSONP response. But I don't know that they support format=jsonp, it's just a guess.
+
+Alternately, if that server supports CORS and allows requests from your origin, you could handle JSON instead (just remove dataType: "json" from your ajax call). Beware that that would require that the user be using a browser that properly supports CORS, which IE8 and IE9 don't. (They support CORS, but not via the normal XMLHttpRequest object, and this is a browser inconsistency that jQuery doesn't smooth over for you. If you search, though, you can find "plugins" or similar that will handle it.)
+
+
+When you say dataType: 'jsonp', you're telling jQuery to use a script element to load the data, setting the script's src to your URL. And that works and retrieves the data (as a script), because you can load scripts cross-domain. But you can't use it, because it's JSON, not script; that's why you see the syntax error. JSONP is a means of using script elements to deliver data cross-origin without CORS, but it only works if both sides are playing along. It would appear the server here isn't, so you cannot get this data client-side directly.

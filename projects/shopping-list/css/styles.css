@@ -1,0 +1,157 @@
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    margin: 3em auto;
+}
+
+.hero {
+    text-align: center;
+}
+
+.logo {
+    height: 220px;
+    width: 220px;
+    border: 2px solid rgb(39, 18, 5);
+    border-radius: 50%;
+    background-color: #DA7039;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Niconne', cursive;
+    font-size: 5em;
+    color: #A65109;
+    text-shadow: 2px 2px 4px rgba(210, 136, 98, 0.56);
+    letter-spacing: 3px;
+}
+
+#items {
+    margin-top: 5em;
+}
+
+.logoImg {
+    background: url("../assets/cart.png") no-repeat;
+    width: 128px;
+    height: 128px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+#addItem,
+#qty {
+    outline: none;
+    width: 267px;
+    border: 1px solid rgba(189, 128, 48, 0.45);
+    height: 42px;
+    padding: 0 10px
+}
+
+input#add {
+    width: 100px;
+    height: 42px;
+    margin-top: 0;
+    border: 1px solid #F7A45E;
+    background-color: #EDAC75;
+    color: #fff;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    
+    letter-spacing: 1px;
+    outline: none;
+}
+
+label {
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    color: rgba(63, 32, 6, 0.8);
+    margin-right: 12px;
+}
+
+ul.list {
+    margin-top: 7em;
+}
+
+.listItem {
+    font-family: 'Lora', serif;
+    font-size: 1.8em;
+    width: 400px;
+    list-style: none;
+    background-color: rgba(224, 109, 11, 0.56);
+    border: 1px solid rgba(242, 160, 110, 0.55);
+    margin-top: 12px;
+    position: relative;
+    padding-left: 0.5em;
+}
+
+.listItem span {
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.del {
+    background: url('../assets/delete.png') no-repeat;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 374px;
+    padding: 0.1em 2em 2em;
+    cursor: pointer;
+}
+/* For Tablets */
+
+@media only screen and (max-width: 991px) {
+    #addItem,
+    #qty {
+        width: 230px;
+        margin-top: 10px;
+    }
+    input#add {
+        margin-top: 29px;
+        margin-left: 15em;
+    }
+}
+/* For Smartphones */
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 3.2em;
+    }
+    #items {
+        margin-top: 0
+    }
+    #addItem,
+    #qty {
+        width: 230px;
+        margin-top: 10px;
+    }
+    input#add {
+        margin-top: 29px;
+        margin-left: 16em;
+    }
+    ul.list {
+        margin-top: 4em;
+    }
+    .listItem {
+        font-size: 1.4em;
+        width: 360px;
+        margin: 3px 0 0 -35px;
+    }
+    .del {
+        top: 5px;
+        left: 336px;
+    }
+}

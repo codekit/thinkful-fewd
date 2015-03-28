@@ -1,0 +1,108 @@
+/*font-family: 'Pacifico',
+cursive;
+font-family: 'Niconne',
+cursive;
+font-family: 'Satisfy',
+cursive;*/
+
+body {
+    margin: 0px;
+    font-family: 'Alegreya', serif;
+}
+
+header {
+    box-shadow: 2px 2px 7px rgb(110, 124, 124);
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #11a8ab;
+    margin: 0px;
+    padding: 24px 24px 50px;
+    background-color: rgb(42, 40, 40);
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 0px 0px -5px #CFBD76;
+    letter-spacing: 5px;
+}
+
+#startButton {
+    font-size: 1.5em;
+    text-align: center;
+    border: 2px solid cadetblue;
+    border-radius: 5px;
+    margin: 82px 419px;
+    padding: 4px 0px;
+    cursor: pointer;
+}
+
+#secQuiz {
+    display: none;
+}
+
+.showQuiz {
+    display: block;
+}
+
+#results {
+    background-color: rgb(11, 155, 158);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    border-bottom: 1px solid rgba(36, 33, 33, 0.5);
+}
+
+#quiz {
+    background-color: grey;
+    padding-bottom: 2em;
+}
+
+#ques {
+    font-size: 2em;
+    padding: 1em;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+    margin-right: 9px;
+    margin-top: -2px;
+}
+
+label {
+    display: block;
+}
+
+#quizSec {
+    padding: 2em 9em 1.5em;
+    font-size: 1.4em;
+}
+
+li {
+    list-style: none;
+}
+
+.nextBtn,
+.startBtn {
+    padding: 2px 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 2em;
+    margin-top: 3em;
+    background-color: cadetblue;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px rgb(42, 40, 40);
+}
+
+.startOver {
+    padding: 2px 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 2em;
+    margin-top: 3em;
+    background-color: cadetblue;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px rgb(42, 40, 40);
+}
